@@ -122,9 +122,7 @@ const ProductForm = ({
       router.push(`/${params.storeId}/products`);
       toast.success("Product deleted successfully");
     } catch (error) {
-      toast.error(
-        "Make sure to remove all categories using this product first"
-      );
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
       setOpen(false);
